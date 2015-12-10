@@ -1,0 +1,37 @@
+.button-box {
+	background: lightblue;
+	width: 200px;
+	position: relative;
+	margin: 0 auto;
+	z-index: 9;
+}
+
+.button-group {
+	position: absolute;
+	top: 32px;
+	left: 0;
+	width: 200px;
+	padding: 10px;
+	background: lightgrey;
+	text-align: center;
+	display: none;
+}
+
+button {
+	display: block;
+	margin: 0 auto;
+	padding: 10px 0;
+	border: none;
+	background: transparent;
+	width: 100%;
+}
+
+.year-select {
+	width: 200px;
+	padding: 10px 20px;
+	background: grey;
+	color: white;
+	text-align: center;
+	margin: 0 auto;
+	cursor: pointer;
+}

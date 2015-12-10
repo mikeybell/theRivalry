@@ -1,0 +1,53 @@
+
+/* paragraphs */
+
+p {
+	line-height: 1.5;
+	font-size: 1.6rem;
+}
+
+
+/* links */
+
+a {
+	color: purple;
+	text-decoration: none;
+	&:hover {
+		color: black;
+	}
+}
+
+/*blockquotes*/
+
+blockquote {
+	background: #F7F7F7;
+	margin: 0;
+	padding: 20px;
+	p {
+		margin-top: 0;
+	}
+}
+
+/*tables*/
+
+table {
+	td {
+		padding: 10px;
+	}
+	tr td:first {
+		padding-right: 0;
+	}
+}
+
+/*lists*/
+
+ul li, ol li {
+	padding: 0;
+}
+
+
+/*
+====================================
+Media Queries
+====================================
+*/

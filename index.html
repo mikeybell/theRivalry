@@ -3,14 +3,45 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Crosby vs. Ovechkin</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="styles/style.css">
+
+	<!-- Fonts -->
+	
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="img/#" />
+
+	<!-- Mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 </head>
 <body>
-	<h1>TEST</h1>
-	<h2>Test</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus rem recusandae, eaque eveniet magnam quod corporis adipisci incidunt asperiores error aut ipsa officiis magni quas quidem totam. Omnis, harum, voluptatum.</p>
 	
+	<div class="button-box">
+		<div class="year-select">Select a year</div> <!-- /.year-select -->
+		
+		<div class="button-group">
+			<button class="show" target="1">2005-2006</button>
+			<button class="show" target="2">2006-2007</button>
+		</div> <!-- /.button-group -->
+
+	</div> <!-- /.button-box -->
+
+	<div class="chart-container" id="chart-container1">
+		<h1>2005-2006</h1>
+		<canvas id="mainChart1"></canvas>
+	</div>
+
+	<div class="chart-container" id="chart-container2">
+		<h1>2006-2007</h1>
+		<canvas id="mainChart2"></canvas>
+	</div>
+	
+	
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+	<script src="js/scripts.js"></script>
 </body>
 </html>
