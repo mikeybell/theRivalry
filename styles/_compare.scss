@@ -1,0 +1,96 @@
+section.compare {
+	background: url(../img/audience.jpg);
+	position: relative;
+	overflow: hidden;
+}
+
+.crosby-overlay {
+	background: rgba(0,0,0,0.8);
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	// transform-origin: top left;
+	// transform: skewX(-10deg);
+}
+
+.ovechkin-overlay {
+	background: rgba(229,21,53,0.8);
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	// transform-origin: bottom right;
+	// transform: skewX(-10deg);
+}
+
+.chart-container {
+	@include column(8);
+	@include push(2);
+	h1 {
+		text-align: center;
+		color: white;
+		background: rgba(0,0,0,0.5);
+		margin: 0 auto;
+		padding: 20px 0;
+		width: 300px;
+		display: none;
+		position: relative;
+	}
+	canvas {
+		position: relative;
+	}
+}
+
+
+.button-box {
+	width: 300px;
+	position: relative;
+	margin: 0 auto;
+	z-index: 9;
+}
+
+.button-group {
+	position: absolute;
+	top: 58px;
+	left: 0;
+	width: 300px;
+	background: rgba(0,0,0,0.7);
+	text-align: center;
+	display: none;
+	:last-child {
+		border-bottom: none;
+	}
+}
+
+button {
+	font-size: 1.6rem;
+	display: block;
+	margin: 0 auto;
+	padding: 10px 0;
+	border: none;
+	border-bottom: 1px solid black;
+	background: none;
+	width: 100%;
+	color: lightgrey;
+	&:hover {
+		background: rgba(0,0,0,0.8);
+	}
+}
+
+.year-select {
+	font-size: 1.6rem;
+	width: 300px;
+	padding: 20px 0;
+	background: rgba(0,0,0,0.6);
+	color: white;
+	text-align: center;
+	margin: 0 auto;
+	cursor: pointer;
+	transition: 0.1s;
+	&:hover {
+		background: rgba(0,0,0,0.9);
+	}
+}

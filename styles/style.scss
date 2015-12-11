@@ -1,7 +1,9 @@
 @import 'setup';
 @import 'grid';
 @import 'typography';
-@import 'year-select';
+@import 'header';
+@import 'compare';
+
 
 /*
 ====================================
@@ -19,7 +21,6 @@ img {
 
 body {
 	color: #666;
-	padding: 0 10px;
 }
 
 ul {
@@ -37,14 +38,10 @@ a, a:active, a:focus {
 	margin: 0 auto;
 }
 
-.chart-container {
-	@include column(8);
-	@include push(2);
+section {
+	padding: 80px 10px;
 }
 
-canvas {
-	position: absolute;
-}
 
 
 
