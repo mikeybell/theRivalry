@@ -4,6 +4,9 @@
 @import 'header';
 @import 'compare';
 
+$yellow: #fed21d;
+$blue: #0E2B58;
+$red: #E51535;
 
 /*
 ====================================
@@ -21,6 +24,7 @@ img {
 
 body {
 	color: #666;
+	font-family: 'Roboto Condensed', sans-serif;
 }
 
 ul {
@@ -42,8 +46,9 @@ section {
 	padding: 80px 10px;
 }
 
-
-
+.up {
+	text-transform: uppercase;
+}
 
 
 

@@ -6,8 +6,8 @@ var rivalryApp = {};
         datasets: [
             {
                 label: 'Crosby 2005-2006',
-                fillColor: 'rgba(0,0,0,0.9)',
-                highlightFill: 'rgba(0,0,0,1)',
+                fillColor: 'rgba(254,210,29,0.9)',
+                highlightFill: 'rgba(254,210,29,1)',
                 barShowStroke: false,
                 data: [81, 39, 63, 102, 5, 14.0]
             },
@@ -26,8 +26,8 @@ var rivalryApp = {};
         datasets: [
             {
                 label: 'Crosby 2006-2007',
-                fillColor: 'rgba(0,0,0,0.9)',
-                highlightFill: 'rgba(0,0,0,1)',
+                fillColor: 'rgba(254,210,29,0.9)',
+                highlightFill: 'rgba(254,210,29,1)',
                 barShowStroke: false,
                 data: [79, 36, 84, 120, 4, 14.4]
             },
@@ -46,8 +46,8 @@ var rivalryApp = {};
         datasets: [
             {
                 label: 'Crosby 2007-2008',
-                fillColor: 'rgba(0,0,0,0.9)',
-                highlightFill: 'rgba(0,0,0,1)',
+                fillColor: 'rgba(254,210,29,0.9)',
+                highlightFill: 'rgba(254,210,29,1)',
                 barShowStroke: false,
                 data: [53, 24, 48, 72, 4, 13.9]
             },
@@ -66,8 +66,8 @@ var rivalryApp = {};
         datasets: [
             {
                 label: 'Crosby 2008-2009',
-                fillColor: 'rgba(0,0,0,0.9)',
-                highlightFill: 'rgba(0,0,0,1)',
+                fillColor: 'rgba(254,210,29,0.9)',
+                highlightFill: 'rgba(254,210,29,1)',
                 barShowStroke: false,
                 data: [77, 33, 70, 103, 3, 13.9]
             },
@@ -86,8 +86,8 @@ var rivalryApp = {};
         datasets: [
             {
                 label: 'Crosby 2009-2010',
-                fillColor: 'rgba(0,0,0,0.9)',
-                highlightFill: 'rgba(0,0,0,1)',
+                fillColor: 'rgba(254,210,29,0.9)',
+                highlightFill: 'rgba(254,210,29,1)',
                 barShowStroke: false,
                 data: [81, 51, 58, 109, 6, 17.1]
             },
@@ -106,8 +106,8 @@ var rivalryApp = {};
         datasets: [
             {
                 label: 'Crosby 2010-2011',
-                fillColor: 'rgba(0,0,0,0.9)',
-                highlightFill: 'rgba(0,0,0,1)',
+                fillColor: 'rgba(254,210,29,0.9)',
+                highlightFill: 'rgba(254,210,29,1)',
                 barShowStroke: false,
                 data: [41, 32, 34, 66, 3, 19.9]
             },
@@ -126,8 +126,8 @@ var rivalryApp = {};
         datasets: [
             {
                 label: 'Crosby 2011-2012',
-                fillColor: 'rgba(0,0,0,0.9)',
-                highlightFill: 'rgba(0,0,0,1)',
+                fillColor: 'rgba(254,210,29,0.9)',
+                highlightFill: 'rgba(254,210,29,1)',
                 barShowStroke: false,
                 data: [22, 8, 29, 37, 3, 10.7]
             },
@@ -146,8 +146,8 @@ var rivalryApp = {};
         datasets: [
             {
                 label: 'Crosby 2012-2013',
-                fillColor: 'rgba(0,0,0,0.9)',
-                highlightFill: 'rgba(0,0,0,1)',
+                fillColor: 'rgba(254,210,29,0.9)',
+                highlightFill: 'rgba(254,210,29,1)',
                 barShowStroke: false,
                 data: [36, 15, 41, 56, 1, 12,1]
             },
@@ -166,8 +166,8 @@ var rivalryApp = {};
         datasets: [
             {
                 label: 'Crosby 2013-2014',
-                fillColor: 'rgba(0,0,0,0.9)',
-                highlightFill: 'rgba(0,0,0,1)',
+                fillColor: 'rgba(254,210,29,0.9)',
+                highlightFill: 'rgba(254,210,29,1)',
                 barShowStroke: false,
                 data: [80, 36, 68, 104, 5, 13.9]
             },
@@ -186,8 +186,8 @@ var rivalryApp = {};
         datasets: [
             {
                 label: 'Crosby 2014-2015',
-                fillColor: 'rgba(0,0,0,0.9)',
-                highlightFill: 'rgba(0,0,0,1)',
+                fillColor: 'rgba(254,210,29,0.9)',
+                highlightFill: 'rgba(254,210,29,1)',
                 barShowStroke: false,
                 data: [77, 28, 56, 84, 3, 11.8]
             },
@@ -209,6 +209,7 @@ rivalryApp.options = function(){
         scaleSteps: 12,
         scaleStepWidth: 10,
         scaleStartValue: 0,
+        scaleFontColor: "white",
         animationEasing: "easeOutBounce",
         tooltipYPadding: 10,
         tooltipXPadding: 10,
@@ -257,7 +258,7 @@ rivalryApp.createCharts = function(){
 
 // Show/Hide Charts
 rivalryApp.showCharts = function(){
-    $('#chart-container1 h1').show();
+    $('#chart-container1 h2').show();
     $('#chart-container2').hide();
     $('#chart-container3').hide();
     $('#chart-container4').hide();
@@ -275,7 +276,7 @@ rivalryApp.showCharts = function(){
     $('button.show').click(function(){
         $('.chart-container').hide();
         $('#chart-container'+$(this).attr('target')).show();
-        $('.chart-container h1').show();
+        $('.chart-container h2').show();
         $('.button-group').hide();
     });
 

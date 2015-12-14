@@ -1,11 +1,29 @@
+$yellow: #fed21d;
+$blue: #0E2B58;
+$red: #E51535;
+
 section.compare {
-	background: url(../img/audience.jpg);
+	background: url(../img/audience2.jpg) fixed center top;
 	position: relative;
 	overflow: hidden;
 }
 
+.title {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	margin-bottom: 50px;
+	p {
+		font-size: 2rem;
+		font-weight: 300;
+		@include column(8);
+		@include push(2);
+	}
+}
+
 .crosby-overlay {
 	background: rgba(0,0,0,0.8);
+	background: linear-gradient(45deg, rgba(0,0,0,0.75), rgba(0,0,0,0.4), rgba(254,210,29,0.75));
 	width: 50%;
 	height: 100%;
 	position: absolute;
@@ -15,8 +33,26 @@ section.compare {
 	// transform: skewX(-10deg);
 }
 
+.crosby-img {
+	position: absolute;
+	bottom: 0;
+	left: -200px;
+	// z-index: 9;
+	img {
+		width: 1000px;
+	}
+}
+
+.ovechkin-img {
+	position: absolute;
+	bottom: 0;
+	right: -150px;
+	// z-index: 9;
+}
+
 .ovechkin-overlay {
 	background: rgba(229,21,53,0.8);
+	background: linear-gradient(-45deg, rgba(0,0,0,0.75), rgba(0,0,0,0.4), rgba(229,21,53,0.75));
 	width: 50%;
 	height: 100%;
 	position: absolute;
@@ -29,18 +65,22 @@ section.compare {
 .chart-container {
 	@include column(8);
 	@include push(2);
-	h1 {
+	background: rgba(0,0,0,0.5);
+	position: relative;
+	padding-bottom: 20px;
+	border-radius: 5px;
+	h2 {
 		text-align: center;
-		color: white;
-		background: rgba(0,0,0,0.5);
+		color: lightgrey;
+		font-size: 5rem;
+		// background: rgba(0,0,0,0.3);
 		margin: 0 auto;
 		padding: 20px 0;
-		width: 300px;
 		display: none;
-		position: relative;
+		// position: relative;
 	}
 	canvas {
-		position: relative;
+		// position: relative;
 	}
 }
 
@@ -48,7 +88,7 @@ section.compare {
 .button-box {
 	width: 300px;
 	position: relative;
-	margin: 0 auto;
+	margin: 0 auto 80px;
 	z-index: 9;
 }
 
@@ -57,7 +97,7 @@ section.compare {
 	top: 58px;
 	left: 0;
 	width: 300px;
-	background: rgba(0,0,0,0.7);
+	background: linear-gradient(rgba(0,0,0,0.9), rgba(50,50,50,0.9));
 	text-align: center;
 	display: none;
 	:last-child {
@@ -77,6 +117,7 @@ button {
 	color: lightgrey;
 	&:hover {
 		background: rgba(0,0,0,0.8);
+		color: $red;
 	}
 }
 
@@ -84,7 +125,7 @@ button {
 	font-size: 1.6rem;
 	width: 300px;
 	padding: 20px 0;
-	background: rgba(0,0,0,0.6);
+	background: rgba(0,0,0,0.7);
 	color: white;
 	text-align: center;
 	margin: 0 auto;
@@ -92,5 +133,10 @@ button {
 	transition: 0.1s;
 	&:hover {
 		background: rgba(0,0,0,0.9);
+		color: $red;
 	}
+}
+
+.year-select .fa {
+	margin-left: 5px;
 }
