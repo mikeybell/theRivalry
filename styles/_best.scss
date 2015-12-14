@@ -1,0 +1,56 @@
+section.best {
+	background: black;
+	h2 {
+		margin-bottom: 80px;
+	}
+}
+
+.player-best {
+	font-family: 'League Gothic', 'Helvetica', sans-serif;
+	letter-spacing: 1px;
+	@include column(6);
+	p {
+		color: white;
+		font-size: 5rem;
+		margin: 0;
+		line-height: 1;
+	}
+	.sc-number {
+		color: $yellow;
+		font-size: 10rem;
+	}
+	.points, .year {
+		color: grey;
+		font-size: 3rem;
+	}
+	.points {
+		margin-left: -10px;
+	}
+}
+
+.player-best .ov-number {
+	color: $red;
+	font-size: 10rem;
+}
+
+.name-year {
+	float: left;
+	margin-top: 10px;
+	margin-right: 20px;
+}
+
+.points-total {
+	float: left;
+}
+
+.best-season {
+	margin: 40px 0 100px;
+}
+
+p.norm {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 1.6rem;
+	letter-spacing: 0;
+	margin-top: 10px;
+}
+
