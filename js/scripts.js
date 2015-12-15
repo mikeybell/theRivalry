@@ -328,8 +328,8 @@ rivalryApp.lineOptions = function(){
 // Doughnut
 rivalryApp.doughnutOptions = function(){
     doughnutOptions = {
-        segmentShowStroke : false,
-        segmentStrokeColor : "rgba(254,210,29,0.9)",
+        segmentShowStroke : true,
+        segmentStrokeColor : "black",
         segmentStrokeWidth : 2,
         percentageInnerCutout : 50, // This is 0 for Pie charts
         animationSteps : 50,

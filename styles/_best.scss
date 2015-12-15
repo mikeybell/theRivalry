@@ -44,13 +44,45 @@ section.best {
 }
 
 .best-season {
-	margin: 40px 0 100px;
+	margin: 40px 0 120px;
+}
+
+.best-season:last-child {
+	margin-bottom: 0;
 }
 
 p.norm {
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 1.6rem;
+	color: lightgrey;
 	letter-spacing: 0;
 	margin-top: 10px;
+	clear: both;
 }
+
+#sc-doughnut, #ov-doughnut {
+	width: 100%;
+}
+
+.gva-container {
+	position: relative;
+}
+
+.gva {
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	transform: translateY(-40%);
+}
+
+.sc span {
+	color: $yellow;
+	font-size: 8rem;
+}
+
+.ov span {
+	color: $red;
+	font-size: 8rem;
+}
+
 
