@@ -1,0 +1,56 @@
+section.career {
+	background: black;
+	h2 {
+		margin-bottom: 80px;
+	}
+	ul {
+		text-align: center;
+		li {
+			font-family: 'League Gothic', 'Helvetica', sans-serif;
+			font-size: 4.5rem;
+			text-transform: uppercase;
+			margin: 30px 0;
+		}
+	}
+}
+
+.sc-awards, .ov-awards {
+	@include column(3);
+	border-radius: 5px;
+	padding: 20px 0;
+}
+
+.awards {
+	@include column(6);
+	padding: 20px 0;
+}
+
+.awards li {
+	color: lightgrey;
+}
+
+.sc-awards {
+	background: radial-gradient(
+		rgba(254,210,29,0.4),
+		rgba(254,210,29,0.1)
+	);
+	background: rgba(254,210,29,0.3);
+	border: 1px solid rgba(254,210,29,0.9);
+}
+
+.sc-awards li {
+	color: $yellow;
+}
+
+.ov-awards {
+	background: radial-gradient(
+		rgba(229,21,53,0.4),
+		rgba(229,21,53,0.1)
+	);
+	background: rgba(229,21,53,0.3);
+	border: 1px solid rgba(229,21,53,0.9);
+}
+
+.ov-awards li {
+	color: $red;
+}
