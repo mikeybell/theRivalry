@@ -283,6 +283,27 @@ var rivalryApp = {};
         }
     ]
 
+    rivalryApp.perSeason = {
+        labels: ['05/06', '06/07', '07/08', '08/09', '09/10', '10/11', '11/12', '12/13', '13/14', '14/15'],
+        datasets: [
+            {
+                label: 'Crosby Points Per Season',
+                fillColor: 'rgba(254,210,29,0.5)',
+                highlightFill: 'rgba(254,210,29,0.9)',
+                strokeColor: 'rgba(254,210,29,0.9)',
+                data: [102,120,72,103,109,66,37,56,104,84]
+            },
+            {
+                label: 'Ovechkin Points Per Season',
+                fillColor: 'rgba(229,21,53,0.5)',
+                highlightFill: 'rgba(229,21,53,0.9)',
+                strokeColor: 'rgba(229,21,53,0.9)',
+                data: [106,92,112,110,109,85,65,56,79,81]
+            }
+        ]
+    }
+
+    
     
 
 // Global Options
@@ -340,6 +361,8 @@ rivalryApp.doughnutOptions = function(){
 }
 
 
+
+
 // Create all charts
 rivalryApp.createCharts = function(){
     var context = document.getElementById('mainChart1').getContext('2d');
@@ -392,6 +415,11 @@ rivalryApp.createCharts = function(){
 
     var context = document.getElementById('ov-doughnut').getContext('2d');
     var dataChart16 = new Chart(context).Doughnut(rivalryApp.ovDoughnut, doughnutOptions);
+
+    // Per Season
+    var context = document.getElementById('per-season-stats').getContext('2d');
+    var dataChart17 = new Chart(context).Line(rivalryApp.perSeason, options);
+
 }
 
 

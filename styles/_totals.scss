@@ -1,0 +1,32 @@
+section.totals {
+	background: black;
+	h2 {
+		margin-bottom: 80px;
+	}
+}
+
+.sc {
+	color: $yellow;
+}
+
+.ov {
+	color: $red;
+}
+
+.totals-half {
+	font-family: 'League Gothic', 'Helvetica', sans-serif;
+	@include column(4);
+	@include push(2);
+}
+
+.tot-number {
+	font-size: 12rem;
+	letter-spacing: 1px;
+	line-height: 1;
+}
+
+span.tot-text {
+	font-size: 4rem;
+	line-height: 1;
+	color: grey;
+}
