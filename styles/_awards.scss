@@ -1,5 +1,7 @@
 section.career {
-	background: black;
+	background: 
+		radial-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)),
+		url(../img/bo_play_pattern.png);
 	h2 {
 		margin-bottom: 80px;
 	}
