@@ -26,12 +26,12 @@
 		</div> <!-- /.title -->
 
 		<div class="crosby-overlay"></div>
-		<div class="crosby-img">
-			<img src="img/crosby.png" alt="">
+		<div class="crosby-img animation-element slide-left">
+			<img src="img/crosby2.png" alt="">
 		</div>
 		<div class="ovechkin-overlay"></div>
-		<div class="ovechkin-img">
-			<img src="img/ovechkin.png" alt="">
+		<div class="ovechkin-img animation-element slide-right">
+			<img src="img/ovechkin3.png" alt="">
 		</div>
 	
 		<div class="button-box">
@@ -114,18 +114,18 @@
 			
 			<!-- CROSBY -->
 			<div class="player-best clearfix">
-				<div class="name-year">
+				<div class="name-year animation-element slide-left">
 					<p class="year">2006-2007</p>
 					<p class="name up">Crosby</p>
 				</div> <!-- /.name-year -->
-				<div class="points-total">
+				<div class="points-total animation-element slide-left">
 					<p class="sc-number">
 						120
 						<span class="points up">points</span>
 					</p>
 				</div> <!-- /.points-total -->
 
-				<canvas id="sc-best" class="best-season"></canvas>
+				<canvas id="sc-best" class="best-season animation-element slide-left-slow"></canvas>
 
 				<div class="name-year">
 					<p class="year up">December</p>
@@ -162,18 +162,18 @@
 
 			<!-- OVECHKIN -->
 			<div class="player-best clearfix">
-				<div class="name-year">
+				<div class="name-year animation-element slide-right">
 					<p class="year">2007-2008</p>
 					<p class="name up">Ovechkin</p>
 				</div> <!-- /.name-year -->
-				<div class="points-total">
+				<div class="points-total animation-element slide-right">
 					<p class="ov-number">
 						112
 						<span class="points up">points</span>
 					</p>
 				</div> <!-- /.points-total -->
 
-				<canvas id="ov-best" class="best-season"></canvas>
+				<canvas id="ov-best" class="best-season animation-element slide-right-slow"></canvas>
 
 				<div class="name-year">
 					<p class="year up">March</p>
@@ -248,13 +248,31 @@
 	</section> <!-- /section.career -->
 
 	<section class="perseason">
-		<div class="container">
+		<div class="container clearfix">
 			<h2>Points Per Season</h2>
-			<canvas id="per-season-stats" class="best-season"></canvas>
+			<div class="avg-container">
+				<p class="avg">AVG</p>
+				<p class="up pps">Points per season</p>
+				<p class="sc-avg-number">85.3</p>
+			</div> <!-- /.avg -->
 
-			
+			<div class="perseason-box">
+				<canvas id="per-season-stats" class="best-season"></canvas>
+			</div> <!-- /.perseason-box -->
+
+			<div class="avg-container">
+				<p class="avg">AVG</p>
+				<p class="up pps">Points per season</p>
+				<p class="ov-avg-number">89.5</p>
+			</div> <!-- /.avg -->
 		</div> <!-- /.container -->
 	</section> <!-- /.perseason -->
+
+
+
+	<footer>
+		<p class="copyright">Made by <a href="http://mikedoesstuff.com">Mike Bell.</a> Let's work together.</p>
+	</footer>
 	
 	
 

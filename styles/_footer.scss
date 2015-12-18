@@ -1,0 +1,18 @@
+footer {
+	padding: 50px;
+	background: 
+			radial-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)),
+			url(../img/bo_play_pattern.png);
+	text-align: center;
+	p {
+		color: grey;
+	}
+	a {
+		color: $yellow;
+	}
+	a:hover {
+		color: lightgrey;
+		text-decoration: underline;
+	}
+}
+

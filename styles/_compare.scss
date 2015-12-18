@@ -36,18 +36,19 @@ section.compare {
 .crosby-img {
 	position: absolute;
 	bottom: 0;
-	left: -200px;
+	left: 0;
 	// z-index: 9;
-	img {
-		width: 1000px;
-	}
+	// img {
+	// 	width: 600px;
+	// }
 }
 
 .ovechkin-img {
 	position: absolute;
 	bottom: 0;
-	right: -150px;
+	right: 0px;
 	// z-index: 9;
+
 }
 
 .ovechkin-overlay {
@@ -65,7 +66,7 @@ section.compare {
 .chart-container {
 	@include column(8);
 	@include push(2);
-	background: rgba(0,0,0,0.5);
+	background: rgba(0,0,0,0.4);
 	position: relative;
 	padding-bottom: 20px;
 	border-radius: 5px;

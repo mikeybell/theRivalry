@@ -6,6 +6,7 @@
 @import 'best';
 @import 'awards';
 @import 'perseason';
+@import 'footer';
 
 $yellow: #fed21d;
 $blue: #0E2B58;
@@ -53,6 +54,52 @@ section {
 	text-transform: uppercase;
 }
 
+
+/*
+====================================
+Animations
+====================================
+*/
+
+.animation-element {
+	opacity: 0;
+}
+
+.animation-element.slide-left {
+  opacity: 0;
+  transition: all 500ms linear;
+  transform: translate3d(-100px, 0px, 0px);
+}
+
+.animation-element.slide-left-slow {
+  opacity: 0;
+  transition: all 700ms linear;
+  transform: translate3d(-100px, 0px, 0px);
+}
+
+.animation-element.slide-left.in-view,
+.animation-element.slide-left-slow.in-view {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.animation-element.slide-right {
+  opacity: 0;
+  transition: all 500ms linear;
+  transform: translate3d(100px, 0px, 0px);
+}
+
+.animation-element.slide-right-slow {
+  opacity: 0;
+  transition: all 700ms linear;
+  transform: translate3d(100px, 0px, 0px);
+}
+
+.animation-element.slide-right.in-view,
+.animation-element.slide-right-slow.in-view {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
 
 
 /*

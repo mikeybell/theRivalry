@@ -4,3 +4,42 @@ section.perseason {
 		margin-bottom: 80px;
 	}
 }
+
+.avg-container {
+	@include column(2);
+	font-family: 'League Gothic', 'Helvetica', sans-serif;
+	text-align: center;
+	
+}
+
+.avg {
+	font-size: 10rem;
+	line-height: 1;
+}
+
+.pps {
+	font-size: 2rem;
+	line-height: 1;
+	color: grey;
+}
+
+.sc-avg-number, .ov-avg-number {
+	font-size: 9rem;
+	line-height: 1.2;
+	color: $yellow;
+}
+
+.sc-avg-number {
+	color: $yellow;
+}
+
+.ov-avg-number {
+	color: $red;
+}
+
+.perseason-box {
+	@include column(8);
+	.best-season {
+		margin: 0;
+	}
+}
