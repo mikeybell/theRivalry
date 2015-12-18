@@ -108,3 +108,17 @@ ul li, ol li {
 Media Queries
 ====================================
 */
+
+@media all and (max-width: 600px) {
+	h1 {
+		font-size: 9rem;
+		letter-spacing: 4px;
+	}	
+}
+
+
+@media all and (max-width: 410px) {
+	h1 {
+		font-size: 7rem;
+	}	
+}

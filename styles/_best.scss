@@ -74,9 +74,10 @@ p.norm {
 
 .gva {
 	position: absolute;
-	top: 50%;
+	z-index: 9;
+	top: 40%;
 	left: 20px;
-	transform: translateY(-40%);
+	// transform: translateY(-80%);
 }
 
 .sc span {
@@ -87,6 +88,23 @@ p.norm {
 .ov span {
 	color: $red;
 	font-size: 8rem;
+}
+
+
+/*
+====================================
+Media Queries
+====================================
+*/
+
+@media all and (max-width: 768px) {
+	.player-best {
+		@include column(12);
+	}
+
+	#sc-doughnut {
+		margin-bottom: 150px;
+	}
 }
 
 

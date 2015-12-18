@@ -56,3 +56,18 @@ section.career {
 .ov-awards li {
 	color: $red;
 }
+
+
+@media all and (max-width: 768px) {
+	.sc-awards, .ov-awards {
+		@include column(2);
+	}
+
+	.awards {
+		@include column(8);
+	}
+
+	section.career ul li {
+		font-size: 3rem;
+	}
+}
