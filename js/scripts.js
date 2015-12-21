@@ -289,15 +289,15 @@ var rivalryApp = {};
             {
                 label: 'Crosby Points Per Season',
                 fillColor: 'rgba(254,210,29,0.5)',
-                highlightFill: 'rgba(254,210,29,0.9)',
                 strokeColor: 'rgba(254,210,29,0.9)',
+                pointColor: 'rgba(254,210,29,0.9)',
                 data: [102,120,72,103,109,66,37,56,104,84]
             },
             {
                 label: 'Ovechkin Points Per Season',
                 fillColor: 'rgba(229,21,53,0.5)',
-                highlightFill: 'rgba(229,21,53,0.9)',
                 strokeColor: 'rgba(229,21,53,0.9)',
+                pointColor: 'rgba(229,21,53,0.9)',
                 data: [106,92,112,110,109,85,65,56,79,81]
             }
         ]
@@ -311,8 +311,8 @@ rivalryApp.options = function(){
     options = {
         scaleShowGridLines: false,
         scaleOverride: true,
-        scaleSteps: 12,
-        scaleStepWidth: 10,
+        scaleSteps: 6,
+        scaleStepWidth: 20,
         scaleStartValue: 0,
         scaleFontColor: "lightgrey",
         animationEasing: "easeOutBounce",

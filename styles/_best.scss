@@ -105,6 +105,25 @@ Media Queries
 	#sc-doughnut {
 		margin-bottom: 150px;
 	}
+
+	.gva {
+		top: 20%;
+	}
+}
+
+@media all and (max-width: 400px) {
+	.sc span {
+		font-size: 5rem;
+	}
+
+	.ov span {
+		font-size: 5rem;
+	}
+
+	.gva {
+		top: 30%;
+		left: 10px;
+	}
 }
 
 

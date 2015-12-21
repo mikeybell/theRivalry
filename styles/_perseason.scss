@@ -5,11 +5,16 @@ section.perseason {
 	}
 }
 
+section.perseason .container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
 .avg-container {
 	@include column(2);
 	font-family: 'League Gothic', 'Helvetica', sans-serif;
 	text-align: center;
-	
 }
 
 .avg {
@@ -41,5 +46,40 @@ section.perseason {
 	@include column(8);
 	.best-season {
 		margin: 0;
+	}
+}
+
+
+/*
+====================================
+Media Queries
+====================================
+*/
+
+@media all and (max-width: 767px) {
+	.avg {
+		font-size: 8rem;
+	}
+
+	.sc-avg-number, .ov-avg-number {
+		font-size: 7rem;
+	}
+}
+
+@media all and (max-width: 620px) {
+	.perseason-box {
+		order: 2 !important;
+		@include column(12);
+	}
+
+	.avg-container {
+		@include column(6);
+		margin-bottom: 30px;
+	}
+}
+
+@media all and (max-width: 400px) {
+	section.perseason h2 {
+		margin-bottom: 30px;
 	}
 }

@@ -58,7 +58,13 @@ section.career {
 }
 
 
-@media all and (max-width: 768px) {
+/*
+====================================
+Media Queries
+====================================
+*/
+
+@media all and (max-width: 930px) {
 	.sc-awards, .ov-awards {
 		@include column(2);
 	}
@@ -66,8 +72,31 @@ section.career {
 	.awards {
 		@include column(8);
 	}
+}
 
+@media all and (max-width: 768px) {
 	section.career ul li {
 		font-size: 3rem;
+	}
+}
+
+@media all and (max-width: 468px) {
+	section.career ul li {
+		font-size: 2.5rem;
+	}
+
+	.sc-awards, .ov-awards, .awards {
+		padding: 5px 0;
+	}
+}
+
+@media all and (max-width: 400px) {
+	section.career ul li {
+		font-size: 2rem;
+		margin: 20px 0;
+	}
+
+	section.career h2 {
+		margin-bottom: 30px;
 	}
 }
