@@ -5,7 +5,6 @@ $red: #E51535;
 section.compare {
 	background: url(../img/hero_bg.jpg) fixed center top;
 	position: relative;
-	overflow: hidden;
 }
 
 .title {
@@ -250,9 +249,9 @@ Media Queries
 }
 
 @media all and (max-width: 400px) {
-	section.compare {
-		overflow: inherit;
-	}
+	// section.compare {
+	// 	overflow: inherit;
+	// }
 
 	.title {
 		margin-bottom: 20px;

@@ -445,8 +445,8 @@ rivalryApp.showCharts = function(){
         $('.button-group').toggle();
     });
 
-    $('button.show').click(function(e){
-        e.preventDefault;
+    $('button.show').click(function(){
+        // e.preventDefault;
         $('.chart-container').hide();
         $('#chart-container'+$(this).attr('target')).show();
         $('.chart-container h2').show();
