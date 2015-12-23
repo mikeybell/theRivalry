@@ -58,6 +58,7 @@ section.best {
 p.norm {
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 1.6rem;
+	line-height: 1.5;
 	color: lightgrey;
 	letter-spacing: 0;
 	margin-top: 10px;
@@ -112,6 +113,15 @@ Media Queries
 }
 
 @media all and (max-width: 400px) {
+
+	.player-best .name {
+		font-size: 3.5rem;
+	}
+
+	.name-year {
+		margin-top: 24px;
+	}
+
 	.sc span {
 		font-size: 5rem;
 	}

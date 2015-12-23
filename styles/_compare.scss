@@ -140,6 +140,44 @@ button {
 	margin-left: 5px;
 }
 
+.legend {
+	display: none;
+}
+
+.legend-half {
+	@include column(6);
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	p {
+		display: inline;
+	}
+}
+
+.sc-circle {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: rgba(254,210,29,0.7);
+	border: 2px solid rgba(254,210,29,0.9);
+	margin-bottom: -3px;
+	margin-right: 5px;
+	display: inline-block;
+}
+
+.ov-circle {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: rgba(229,21,53,0.7);
+	border: 2px solid rgba(229,21,53,0.9);
+	margin-bottom: -3px;
+	margin-right: 5px;
+	display: inline-block;
+}
+
+
+
 
 /*
 ====================================
@@ -199,12 +237,31 @@ Media Queries
 
 	.ovechkin-img {
 		display: none;
-	}	
+	}
+
+	.button-box {
+		margin-bottom: 30px;
+	}
+
+	.legend {
+		margin-bottom: 30px;
+		display: block;
+	}
 }
 
 @media all and (max-width: 400px) {
+	section.compare {
+		overflow: inherit;
+	}
+
 	.title {
 		margin-bottom: 20px;
 	}
+
+	.chart-container h2 {
+		font-size: 3.5rem;
+		letter-spacing: 2px;
+	}
+
 }
 

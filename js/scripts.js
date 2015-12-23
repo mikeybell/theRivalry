@@ -315,7 +315,8 @@ rivalryApp.options = function(){
         scaleStepWidth: 20,
         scaleStartValue: 0,
         scaleFontColor: "lightgrey",
-        animationEasing: "easeOutBounce",
+        animation: false,
+        // animationEasing: "easeOutBounce",
         tooltipYPadding: 10,
         tooltipXPadding: 10,
         tooltipXOffset: -50,
@@ -335,7 +336,8 @@ rivalryApp.lineOptions = function(){
         scaleStepWidth: 3,
         scaleStartValue: 0,
         scaleFontColor: "lightgrey",
-        animationEasing: "easeOutBounce",
+        animation: false,
+        // animationEasing: "easeOutBounce",
         tooltipYPadding: 10,
         tooltipXPadding: 10,
         tooltipXOffset: -50,
@@ -353,10 +355,12 @@ rivalryApp.doughnutOptions = function(){
         segmentStrokeColor : "black",
         segmentStrokeWidth : 2,
         percentageInnerCutout : 50, // This is 0 for Pie charts
-        animationSteps : 50,
-        animationEasing : "easeOutBounce",
-        animateRotate : true,
-        animateScale : true
+        animation: false,
+        // animationEasing: "easeOutBounce",
+        // animationSteps : 50,
+        // animationEasing : "easeOutBounce",
+        // animateRotate : true,
+        // animateScale : true
     }
 }
 
