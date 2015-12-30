@@ -26,11 +26,11 @@
 		</div> <!-- /.title -->
 
 		<div class="crosby-overlay"></div>
-		<div class="crosby-img animation-element slide-left">
+		<div class="crosby-img">
 			<img src="img/crosby2.png" alt="">
 		</div>
 		<div class="ovechkin-overlay"></div>
-		<div class="ovechkin-img animation-element slide-right">
+		<div class="ovechkin-img">
 			<img src="img/ovechkin3.png" alt="">
 		</div>
 	
@@ -288,7 +288,15 @@
 	</footer>
 	
 	
-
+	<script type="text/javascript"> 
+	    $(document).bind("mobileinit", function () {
+	        // jQuery Mobile's Ajax navigation does not work in all cases (e.g.,
+	        // when navigating from a mobile to a non-mobile page), especially when going back, hence disabling it.
+	        $.extend($.mobile, {
+	            ajaxEnabled: false
+	        });
+	    }); 
+	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
 	<script src="js/scripts.js"></script>

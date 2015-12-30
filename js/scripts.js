@@ -430,6 +430,7 @@ rivalryApp.createCharts = function(){
 
 // Show/Hide Charts
 rivalryApp.showCharts = function(){
+    $('#chart-container1').show();
     $('#chart-container1 h2').show();
     $('#chart-container2').hide();
     $('#chart-container3').hide();
@@ -445,8 +446,8 @@ rivalryApp.showCharts = function(){
         $('.button-group').toggle();
     });
 
-    $('button.show').click(function(){
-        // e.preventDefault;
+    $('button.show').on('click', function(){
+        // e.preventDefault();
         $('.chart-container').hide();
         $('#chart-container'+$(this).attr('target')).show();
         $('.chart-container h2').show();
